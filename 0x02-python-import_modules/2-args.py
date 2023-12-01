@@ -5,6 +5,5 @@ if __name__ == "__main__":
     argn = "argument" if argv_length == 2 else "arguments"
     delm = "." if argv_length == 1 else ":"
     print("{:d} {:s}{:s}".format(argv_length - 1, argn, delm))
-    for i, arg in enumerate(argv):
-        if i > 0:
-            print("{:d}: {:s}".format(i, arg))
+    for i in range(1, argv_length):
+        print("{:d}: {:s}".format(i, argv[i]))
