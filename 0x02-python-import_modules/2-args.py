@@ -4,6 +4,6 @@ if __name__ == "__main__":
     argv_length = len(argv)
     argn = "argument" if argv_length == 2 else "arguments"
     delm = "." if argv_length == 1 else ":"
-    print("{:d} {:s}{:s}".format(argv_length - 1, argn, delm))
+    print("{} {:s}{:s}".format(argv_length - 1, argn, delm))
     for i in range(1, argv_length):
-        print("{:d}: {:s}".format(i, argv[i]))
+        print("{}: {}".format(i, argv[i]))

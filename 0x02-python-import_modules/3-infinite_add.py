@@ -5,4 +5,4 @@ if __name__ == "__main__":
     length = len(argv)
     for i in range(1, length):
         sum += int(argv[i])
-    print("{:d}".format(sum))
+    print("{}".format(sum))
