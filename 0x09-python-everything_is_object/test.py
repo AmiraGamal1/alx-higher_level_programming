@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-a = (1)
-b = (1)
-print(a is b)
-print(type((1)))
+def inc(n):
+    n += 1
+
+a = 1
+inc(a)
+print(a)
