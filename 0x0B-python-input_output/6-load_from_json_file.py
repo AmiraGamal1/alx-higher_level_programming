@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 """Define load_from_json_file"""
-
-
 import json
 
 
@@ -11,5 +9,5 @@ def load_from_json_file(filename):
         filename: utf-8 file
     Return: nothings
     """
-    with open(filename, 'r') as file:
+    with open(filename) as file:
         return json.load(file)
