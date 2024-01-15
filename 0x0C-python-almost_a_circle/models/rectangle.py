@@ -45,7 +45,7 @@ class Rectangle(Base):
             raise TypeError("height must be an integer")
         if value <= 0:
             raise ValueError("height must be > 0")
-        self.__width = value
+        self.__height = value
 
     @property
     def x(self):
@@ -93,7 +93,7 @@ class Rectangle(Base):
     def __str__(self):
         """return [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
         return "[Rectangle] ({}) {}/{} - {}/{}".\
-            format(self.id, self.x, self.y, self.width, self.height)
+            format(self.id, self.__x, self.__y, self.__width, self.__height)
 
     def update(self, *args, **kwargs):
         """update Rectangle attribute use args
