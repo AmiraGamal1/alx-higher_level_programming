@@ -47,7 +47,7 @@ class Rectangle(Base):
         elif value <= 0:
             raise ValueError("height must be > 0")
         else:
-            self.__width = value
+            self.__height = value
 
     @property
     def x(self):
@@ -62,12 +62,12 @@ class Rectangle(Base):
         elif value < 0:
             raise ValueError("x must be >= 0")
         else:
-            self.__width = value
+            self.__x = value
 
     @property
     def y(self):
         """return y"""
-        return self.__width
+        return self.__y
 
     @y.setter
     def y(self, value):
@@ -77,7 +77,7 @@ class Rectangle(Base):
         elif value <= 0:
             raise ValueError("y must be >= 0")
         else:
-            self.__width = value
+            self.__y = value
 
     def area(self):
         """return the area of the rectangle"""
