@@ -3,7 +3,6 @@ const num = process.argv.slice(2);
 if (num.length === 0 || num.length === 1) {
   console.log(0);
 } else {
-  num.sort();
-  num.reverse();
-  console.log(num[1]);
+  const uniqe = [...new Set(num.sort())];
+  console.log(uniqe[uniqe.length - 2]);
 }
