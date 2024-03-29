@@ -14,7 +14,7 @@ def send():
     try:
         res = req.json()
         if bool(res) is False:
-            print("NO result")
+            print("No result")
         else:
             print("[{}] {}".format(res['id'], res['name']))
     except:
